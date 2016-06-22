@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>vehicle details</title>
+<script type="text/java src="advanceJs.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+
+		textarea:focus, input:focus{
+			outline: 0;
+		}
+
+		input:focus:invalid,
+		textarea:focus:invalid{
+			border:1px solid #F5192F;
+			box-shadow:0 0 4px #F5192F;
+		}
+
+		input:focus:valid,
+		textarea:focus:valid{
+			border: 1px solid #64C364;
+			box-shadow: 0 0 4px #64C364;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<form action="">
+		<div class="form-title-row">
+			<h1>Vehicle Details</h1>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Maker name</span>
+				<input id="maker" type="text" name="maker" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Car Name</span>
+				<input id="name" type="text" name="name" required />
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Car Model</span>
+				<input id="model" type="text" name="model" required  />
+			</label>
+		</div>
+		<div class="form-row">
+			<label>
+				<span>year</span>
+				<input type="url" name="url" required />
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Color</span>
+				<input type="url" name="url" required pattern="http://.+" title="Your url should start with http://">
+			</label>
+		</div>
+		
+		
+		
+		<div class="form-row">
+			<button type="submit" style="color:black;" onclick="getDetails();">Submit</button>
+		</div>
+
+		
+
+	</form>
+
+</body>
+
+</html>
