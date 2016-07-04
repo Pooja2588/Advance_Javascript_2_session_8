@@ -38,9 +38,24 @@ function division(a,b)
 	alert("Division of "+a+ ""+ b+ " is: "+c); 
 }
 /*problem statement 3*/
+
+var vehicle1=function(maker,name,model,year,color)
+{
+	this.maker=maker;
+	this.name=name;
+	this.model=model;
+	this.color=color;
+}
+var detail=[];
 function getDetails()
 {
-	
+	var maker=document.getElementById('maker').value;
+	var name=document.getElementById('name').value;
+	var model=document.getElementById('model').value;
+	var year=document.getElementById('year').value;
+	var car=new vehicle1(maker,name,model,color);
+	detail.push(car);
+	console.log(car);
 }
 
 
@@ -52,4 +67,4 @@ function person(name,age)
 }
 
 var student=Object.create(person);
-student.age=
+Person.prototype.nationality = "Indian"; 
